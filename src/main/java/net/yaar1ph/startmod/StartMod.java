@@ -2,6 +2,7 @@ package net.yaar1ph.startmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.yaar1ph.startmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,6 @@ public class StartMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
 	}
 }
