@@ -1,37 +1,20 @@
 {
-	"schemaVersion": 1,
-	"id": "startmod",
-	"version": "${version}",
-	"name": "Start mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "MIT",
-	"icon": "assets/startmod/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.yaar1ph.startmod.StartMod"
-		],
-		"fabric-datagen": [
-			"net.yaar1ph.startmod.StartModDataGenerator"
-		],
-        "client": [
-          "net.yaar1ph.startmod.StartModClient"
-        ]
-	},
-	"mixins": [
-		"startmod.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.18.4",
-		"minecraft": "~1.21.11",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "startmod",
+  "version": "1.0.0",
+  "name": "Start Mod",
+  "description": "My first Fabric mod!",
+  "authors": ["yaar1ph"],
+  "contact": {},
+  "license": "CC0-1.0",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.yaar1ph.startmod.StartMod"],
+    "client": ["net.yaar1ph.startmod.StartModClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric": "*",
+    "minecraft": "1.21.11"
+  }
 }
